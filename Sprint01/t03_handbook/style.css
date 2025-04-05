@@ -1,0 +1,93 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    gap: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+
+}
+
+nav ul a:hover {
+    color: coral;
+}
+
+input {
+    border-radius: 5px;
+}
+
+
+.grid-sections {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    background-color: white;
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    
+}
+
+.description {
+    background: white;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);;
+}
+
+.example {
+    padding: 10px;
+    background-color: lightgray;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.change-color {
+    background-color: lightblue;
+}
+
+.change-border {
+    border-style: dashed;
+}
+
+@media (max-width: 320px) {
+    .grid-sections {
+        display: block;
+        align-items: center;
+    }
+    .description {
+        margin-bottom: 15px;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 370px) {
+    .grid-sections {
+        display: block;
+        align-items: center;
+    }
+
+    .description {
+        margin-bottom: 15px;
+        padding: 10px;
+    }
+}

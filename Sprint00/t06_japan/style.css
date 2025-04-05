@@ -1,0 +1,18 @@
+.japan {
+    position: relative;
+    height: 300px;
+    width: 450px;
+    border: 2px solid gray;
+}
+
+.japan::after {
+    content: '';
+    height: 180px;
+    aspect-ratio: 1;
+    background-color: #aa2332;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}

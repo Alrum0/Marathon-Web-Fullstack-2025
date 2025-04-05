@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oscorp</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo-name">
+            <a href="#">oscorp</a>
+        </div>
+        <nav class="menu-nav">
+            <ul class="menu-links">
+                <li><a href="#">About</a></li>
+                <li><a href="#">Service</a></li>
+                <li><a href="#">Contact</a></li>
+                <li>
+                    <div class="search">
+                    <input type="text" placeholder="Search" class="search-input">
+                </div>
+                </li>
+            </ul>
+        </nav>
+        <div class="phone-number">
+            <p>Phone: +5551234567</p>
+        </div>
+    </header>
+    <nav>
+        <ul class="breadcrumbs">
+            <li><a class="active" href="#">Home</a></li>
+            <li><a href="#">Catalog</a></li>
+        </ul>
+    </nav>
+    <div class="main-contet">
+        <div class="left-side">
+            <section class="catalog">
+                <div class="choose">
+                    <h1>Catalog</h1>
+                    <div class="custom-radio-buttons">
+                        <label>
+                            <input type="checkbox" class="custom-checkbox">
+                            <span class="weapon">Weapon</span>
+                        </label>
+                        <label>
+                            <input type="checkbox" class="custom-checkbox">
+                            <span class="alien">Alien</span>
+                        </label>
+                        <label>
+                            <input type="checkbox" class="custom-checkbox">
+                            <span class="green">Green</span>
+                        </label>
+                    </div>
+                </div>
+            </section>
+            <section class="filters">
+                <div class="filters-group">
+                    <span>Chance of Lethal Effect</span>
+                    <div class="filter-options">
+                        <ul>
+                            <li><input type="checkbox" id="category1"><label for="category1">Unlikely (0-20%)</label></li>
+                            <li><input type="checkbox" id="category2"><label for="category2">Mild (20-40%)</label></li>
+                            <li><input type="checkbox" id="category3"><label for="category3">Moderate (40-60%)</label></li>
+                            <li><input type="checkbox" id="category4"><label for="category4">Likely (60-80%)</label></li>
+                            <li><input type="checkbox" id="category5"><label for="category5">Cetrain (80-100%)</label></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="price-options">
+                    <span>Price</span>
+                    <div class="custom-range">
+                        <input type="range" name="size" id="custom-size-range" class="custom-size-range"/>
+                        <label for="custom-size-range" class="range-label" >20000</label>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <section class="products">
+            <article class="product">
+                <div class="product-img">
+                    <img src="./assets/images/1.jpg" alt="Product 1">
+                </div>
+                <div class="product-info">
+                    <h3>Павук-птахоїд - Brachypelma albopilosum</h3>
+                    <p>350.00грн.</p>
+                    <p>У наявності</p>
+                    <a href="card.html">BUY</a>
+                </div>
+            </article>
+            <article class="product">
+                <div class="product-img">
+                    <img src="./assets/images/2.png" alt="Product 2">
+                </div>
+                <div class="product-info">
+                    <h3>Павук-птахоїд - Lasiodora parahybana самець</h3>
+                    <p>150.00грн.</p>
+                    <p style="color: red;">немає в наявності</p>
+                    <a href="card.html" class="notavali">BUY</a>
+                </div>
+            </article>
+            <article class="product">
+                <div class="product-img">
+                    <img src="./assets/images/3.png" alt="Product 3">
+                </div>
+                <div class="product-info">
+                    <h3>Павук-птахоїд - Monocentropus balfouri самка</h3>
+                    <p>700.00грн.</p>
+                    <p style="color: red;">немає в наявності</p>
+                    <a href="card.html" class="notavali">BUY</a>
+                </div>
+            </article>
+            <article class="product">
+                <div class="product-img">
+                    <img src="./assets/images/4.jpg" alt="Product 4">
+                </div>
+                <div class="product-info">
+                    <h3>Павук-птахоїд - Nhandu coloratovillosus самець</h3>
+                    <p>400.00грн.</p>
+                    <p>У наявності</p>
+                    <a href="card.html">BUY</a>
+                </div>
+            </article>
+        </section>
+    </div>
+    <footer>
+        <ul class="pagination">
+            <li><a href="#">&laquo;</a></li>
+			<li class="active"><a href="#">1</a></li>
+			<li><a href="#">2</a></li>
+			<li><a href="#">3</a></li>
+			<li><a href="#">4</a></li>
+			<li><a href="#">5</a></li>
+			<li><a href="#">&raquo;</a></li>
+		</ul>
+		<p>Copyright &copy; 2013 | OSCORP | ALL Rights Reserved</p>
+    </footer>
+</body>
+</html>

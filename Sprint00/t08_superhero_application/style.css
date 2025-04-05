@@ -1,0 +1,13 @@
+.border {
+    border: 2px solid gray;
+    padding: 20px;
+    position: fixed;
+}
+
+fieldset {
+    padding-bottom: 20px;
+}
+
+.button {
+    margin-top: 20px;
+}

@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    position: relative;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.stone {
+    position: absolute;
+    height: 90px;
+    aspect-ratio: 1;
+    transform: rotate(-45deg);
+    cursor: grab;
+    border: 3px solid transparent;
+    transition: border 0.2s;
+}
+
+.stone.not-draggable {
+    border: 3px solid black;
+    cursor: default;
+}
+
+.stone:active {
+    cursor: grabbing;
+}
+
+.yellow {
+    left: 50%;
+    top: 23%;
+    background-color: #d7c451;
+}
+
+.green {
+    left: 45%;
+    top: 32%;
+    background-color: #44d765;
+}
+
+.blue {
+    left: 53%;
+    top: 37%;
+    background-color: #0385d5;
+}
+
+.purple {
+    left: 63%;
+    top: 30%;
+    background-color: #a54dd6;
+}
+
+.red {
+    left: 66%;
+    top: 40%;
+    background-color: #d63a55;
+}
+
+.pink {
+    left: 49%;
+    top: 48%;
+    background-color: #d6577c;
+}

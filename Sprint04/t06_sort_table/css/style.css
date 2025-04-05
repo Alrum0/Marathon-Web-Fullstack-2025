@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#placeholder {
+    display: none;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: flex-start;
+    align-items: stretch;
+    height: 100vh;
+    padding: 20px;
+}
+
+h1 {
+    text-align: left;
+    margin-bottom: 20px;
+    margin: 0;
+    display: inline-block;
+    width: auto;
+}
+
+#notification {
+    margin-bottom: 20px;
+    align-self: flex-end;
+    background-color: #808080;
+    padding: 5px 20px 5px 20px;
+    border-radius: 10px;
+    margin: 0;
+    display: inline-block;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+
+table {
+    border: 3px solid black;
+}
+
+table,
+th,
+td {
+    text-align: center;
+}
+
+td {
+    padding: 5px 10px 5px 10px;
+}
+
+th {
+    background-color: red;
+    padding: 10px 20px 10px 20px;
+}
+
+td {
+    background-color: #d3d3d3;
+}
+
+.age {
+    padding: 10px 20px 10px 20px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}

@@ -1,0 +1,19 @@
+.image {
+    height: 250px;
+}
+
+.man {
+    height: 80px;
+    
+}
+
+.even img:nth-child(even),
+.odd img:nth-child(odd) {
+    transition: none;
+}
+
+.image:hover~.even img:nth-child(odd),
+.image:hover~.odd img:nth-child(even) {
+    opacity: 0;
+    pointer-events: none;
+}

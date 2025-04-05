@@ -1,0 +1,95 @@
+
+header {
+    background-color: red;
+    margin-top: 10px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    align-items: start;
+}
+
+li {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.title {
+    text-align: center;
+    color: white;
+    margin-top: 0px;
+}
+
+.menu-button {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: 20px;
+    justify-content: start;
+}
+
+.menu-button a {
+    width: 100%;
+    text-transform: uppercase;
+    color: white;
+    padding: 20px;
+    padding-left: 80px;
+    padding-right: 80px;
+    background-color: lightgrey;
+    text-align: center;
+}
+
+.submenu > li > .submenu {
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform: translate(100%, 0);
+}
+
+
+
+li:hover > a {
+    background-color: red;
+}
+
+.submenu {
+    display: none;
+    position: relative;
+}
+
+.menu-button>li:hover>.submenu {
+    display: block;
+}
+
+.menu-button li>ul {
+    display: none;
+}
+
+.menu-button > li:hover>ul {
+    display: flex;
+}
+
+.menu-button li>.submenu>li>.submenu {
+    display: none;
+}
+
+.menu-button li>.submenu>li:hover>.submenu {
+    display: block;
+}

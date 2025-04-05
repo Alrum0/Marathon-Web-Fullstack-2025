@@ -1,0 +1,28 @@
+img {
+    background: #F1F1FA;
+    width: 400px;
+    height: 300px;
+    display: block;
+    margin: 10px auto;
+    border: 0;
+}
+
+.text {
+    margin-top: 20px;
+    margin-right: 40px;
+    position: fixed;
+    top: 0;
+    right: 0;
+
+}
+
+.text.completed {
+    background-color: #90ed91 
+}
+
+.text label {
+    background: red;
+    padding: 5px;
+    border-radius: 5px;
+    right: 0;
+}

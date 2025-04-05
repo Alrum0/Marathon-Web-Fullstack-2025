@@ -1,0 +1,23 @@
+.container {
+    display: flex;
+}
+
+input {
+    width: 100%;
+    color: green;
+    padding: 10px;
+    height: 2em;
+    flex-grow: 1;
+}
+
+input:hover {
+    color: red;
+}
+
+button {
+    color: green;
+}
+
+button:hover {
+    color: red;
+}

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Superhero Form</h1>
+    <form class="border">
+        <fieldset>
+            <legend>About the Superhero</legend>
+            <label for="name">Real Name</label>
+            <input type="text" 
+                   placeholder="Superhero real name" 
+                   id="name" 
+                   name="name"
+                   autofocus>
+            <label for="alias">Superhero Name</label>
+            <input type="text" 
+                   placeholder="Superhero alias" 
+                   id="alias" 
+                   name="alias">
+            <label for="age">Age</label>
+            <input type="number" 
+                   min="1" 
+                   max="999" 
+                   step="1" 
+                   id="age" 
+                   name="num">
+            <br>
+            <br>
+            <label for="about">About</label>
+            <textarea name="about" 
+                      maxlength="500" 
+                      placeholder="Information about the superhero, max 500 symbols" 
+                      rows="5" 
+                      cols="70" 
+                      id="about"></textarea>
+            <br>
+            <br>
+            <label for="photo">Photo</label>
+            <input type="file" 
+                   id="photo" 
+                   name="photo">
+        </fieldset>
+        <fieldset>
+            <legend>Powers</legend>
+            <input type="checkbox" 
+                   id="telekinesis" 
+                   name="checkbox_origin">
+            <label for="telekinesis">Telekinesis</label>
+            <input type="checkbox" 
+                   id="Superstrengthorspeed" 
+                   name="checkbox_origin">
+            <label for="Superstrengthorspeed">Super strength or speed</label>
+            <input type="checkbox" 
+                   id="Shapeshifting" 
+                   name="checkbox_origin">
+            <label for="Shapeshifting">Shapeshifting</label>
+            <input type="checkbox" 
+                   id="Flight" 
+                   name="checkbox_origin">
+            <label for="Flight">Flight</label>
+            <input type="checkbox" 
+                   id="Elementalcontrol" 
+                   name="checkbox_origin">
+            <label for="Elementalcontrol">Elemental control</label>
+            <input type="checkbox" 
+                   id="other_side" 
+                   name="checkbox_origin">
+            <label for="other_side">Other</label>
+            <br>
+            <br>
+            <label for="levelOfControl">Level of control:</label>
+            <input type="range" 
+                   id="levelOfControl" 
+                   name="levelOfControl" 
+                   min="0" 
+                   max="10" 
+                   step="1" 
+                   value="1">
+        </fieldset>
+        <fieldset>
+            <legend>Origin of Powers</legend>
+            <br>
+            <input type="radio" 
+                   id="unknown" 
+                   name="origin">
+            <label for="unknown">Unknown</label>
+            <input type="radio" 
+                   id="Freaklabaccident" 
+                   name="origin">
+            <label for="Freaklabaccident">Freak lab accident</label>
+            <input type="radio" 
+                   id="Chosenbyanancientwisebeing" 
+                   name="origin">
+            <label for="Chosenbyanancientwisebeing">Chosen by an ancient wise being</label>
+            <input type="radio" 
+                   id="Thesuperheroisnothuman" 
+                   name="origin">
+            <label for="Thesuperheroisnothuman">The superhero is not human</label>
+            <input type="radio" 
+                   id="other" 
+                   name="origin">
+            <label for="other">Other</label>
+        </fieldset>
+        <input class="button" type="reset" value="CLEAR" name="button_clear">
+        <input class="button" type="submit" value="SEND" name="button_send">
+    </form>
+</body>
+</html>

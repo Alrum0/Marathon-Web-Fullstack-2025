@@ -1,0 +1,50 @@
+table {
+    text-align: center;
+    position: relative;
+    border-collapse: collapse;
+    max-width: 1240px;
+}
+
+td {
+    border: 1px solid white;
+    padding: 20px;
+}
+
+.header {
+    background-color: black;
+    color: white;
+}
+
+.first_row {
+    background-color: #d2913c;
+}
+
+.second_row {
+    background-color: #007d00;
+}
+
+.third_row {
+    background-color: #005591;
+}
+
+.fourth_row {
+    background-color: #ffff05;
+}
+
+.fifth_row {
+    background-color: #be282d;
+}
+
+.sixth_row {
+    background-color: #7d73b4;
+}
+
+.footer {
+    border: 2px solid lightgray
+}
+
+.image {
+    border-radius: 30px;
+    height: 120px;
+    aspect-ratio: 1;
+}

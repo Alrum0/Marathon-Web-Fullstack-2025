@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Handbook</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Web Handbook</h1>
+        <nav>
+            <ul>
+                <li><a href="#html">HTML</a></li>
+                <li><a href="#css">CSS</a></li>
+                <li><a href="#protocols">Protocols</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="html" class="grid-sections">
+            <h2>HTML</h2>
+            <div class="description">
+                <h3>Table</h3>
+                <p>HHTML consists of elements that define the structure of a webpage.</p>
+                <code>
+                    &lt;p&gt; this is a paragraph&lt;/p&gt;
+                </code>
+                <div class="example">This is a paragraph</div>
+            </div>
+            <div class="description">
+                <h3>Form</h3>
+                <p>An HTML form is used to collect user input. The user input is most often sent to a server for processing.</p>
+                <code>
+                    &lt;form&gt;
+                        &lt;input type=&quot;text&quot; placeholder=&quot;Enter name&quot;&gt;
+                    &lt;/form&gt;
+                </code>
+                <div class="example">
+                    <form>
+                        <input type="text" placeholder="Enter name">
+                    </form>
+                </div>
+            </div>
+            <div class="description">
+                <h3>Headings</h3>
+                <p>HTML headings are titles or subtitles that you want to display on a webpage.</p>
+                <code>
+                    &lt;h1&gt;Heading 1&lt;/h1&gt;
+                    &lt;h2&gt;Heading 2&lt;/h2&gt;
+                    &lt;h3&gt;Heading 3&lt;/h3&gt;
+                    &lt;h4&gt;Heading 4&lt;/h4&gt;
+                </code>
+                <div class="example">
+                    <h1>Heading 1</h1>
+                    <h2>Heading 2</h2>
+                    <h3>Heading 3</h3>
+                    <h4>Heading 4</h4>
+                </div>
+            </div>
+            <div class="description">
+                <h3>HTML &lt;a&gt; Tag</h3>
+                <p>The &lt;a&gt; tag defines a hyperlink, which is used to link from one page to another.</p>
+                <code>&lt;a href=&quot;https://www.w3schools.com&quot;&gt;Visit W3Schools.com!&lt;/a&gt;</code>
+                <div class="example"><a href="https://www.w3schools.com">Visit W3Schools.com!</a></div>
+            </div>
+        </section>
+        <section id="css" class="grid-sections">
+            <h2>CSS</h2>
+            <div class="description">
+                <h3>Selectors</h3>
+                <p>Selectors define which HTML elements are styled.</p>
+                <code>p { color: black; }</code>
+                <div class="example" style="color: black;">This text is black</div>
+            </div>
+            <div class="description">
+                <h3>Grid Layout</h3>
+                <p>Grid allows creating complex layouts easily.</p>
+                <code>display: grid</code>
+            </div>
+            <div class="description">
+                <h3>Background color</h3>
+                <p>The background-color property specifies the background color of an element.</p>
+                <code>background-color: lightblue;</code>
+                <div class="example change-color"> </div>
+            </div>
+            <div class="description">
+                <h3>Border</h3>
+                <p>The border-style property specifies what kind of border to display.</p>
+                <code>{ border-style: dashed; }</code>
+                <div class="example change-border"></div>
+            </div>
+        </section>
+        <section id="protocols" class="grid-sections">
+            <h2>Protocols</h2>
+            <div class="description">
+                <h3>HTTP & HTTPS</h3>
+                <p>HTTP (HyperText Transfer Protocol) is the foundation of communication for the World Wide Web. HTTPS is the secure
+                    version that uses SSL/TLS encryption.</p>
+                <p><strong>Response Status Codes:</strong></p>
+                <ul>
+                    <li><strong>1xx</strong> - Informational responses</li>
+                    <li><strong>2xx</strong> - Success (e.g., 200 OK)</li>
+                    <li><strong>3xx</strong> - Redirection (e.g., 301 Moved Permanently)</li>
+                    <li><strong>4xx</strong> - Client errors (e.g., 404 Not Found)</li>
+                    <li><strong>5xx</strong> - Server errors (e.g., 500 Internal Server Error)</li>
+                </ul>
+            </div>
+            <div class="description">
+                <h3>DNS</h3>
+                <p>DNS (Domain Name System) translates domain names into IP addresses.</p>
+                <p><strong>Common DNS Record Types:</strong></p>
+                <ul>
+                    <li><strong>A</strong> - Maps a domain to an IPv4 address</li>
+                    <li><strong>AAAA</strong> - Maps a domain to an IPv6 address</li>
+                    <li><strong>CNAME</strong> - Alias for another domain</li>
+                    <li><strong>MX</strong> - Mail exchange record</li>
+                    <li><strong>TXT</strong> - Stores text information (e.g., SPF records for email authentication)</li>
+                </ul>
+            </div>
+            <div class="description">
+                <h3>IP Address</h3>
+                <p>An IP address identifies a device on the internet.</p>
+                <p><strong>Finding an IP Address:</strong></p>
+                <code>ping google.com</code>
+                <p>or use an online tool like:</p>
+                <code>nslookup google.com</code>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
