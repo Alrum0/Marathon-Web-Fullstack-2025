@@ -1,1 +1,1 @@
-# Marathon-Web-Fullstack-2025-
+# Marathon-Web-Fullstack-2025
