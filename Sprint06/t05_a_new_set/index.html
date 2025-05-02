@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./server.js" defer></script>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" defer></script>
+</head>
+<body>
+    <h1>New Avenger application</h1>
+	<div id="submittedInfo"></div>
+    <form id="applicationForm" method="post" enctype="multipart/form-data">
+        <fieldset>
+            <legend>About candidate</legend>
+
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name" placeholder="Tell your name" required>
+
+            <label for="email">E-mail</label>
+            <input type="email" name="email" id="email" placeholder="Tell your e-mail" required>
+
+            <label for="age">Age</label>
+            <input type="number" name="age" id="age" placeholder="Tell your age" required><br>
+            <div class="about">
+                <label for="description">About</label><br>
+                <textarea id="description" name="description" placeholder="Tell about yourself, max 500 symbols" maxlength="500" rows="5" cols="70" required></textarea><br>
+            </div>
+      
+            <label for="photo">Your photo:</label>
+            <input type="file" id="photo" name="photo" required><br><br>
+        </fieldset>
+
+        <button type="reset">CLEAR</button>
+        <button type="submit">SEND</button>
+    </form>
+</body>
+</html>
