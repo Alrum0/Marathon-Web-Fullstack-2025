@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+    <script src="script.js" defer></script>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-top: 20px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+    </style>
+</head>
+
+<body>
+	<h1>Parsing CSV data</h1>
+	<label>Upload file:</label>
+	<input type="file" id="fileInput" accept=".csv">
+	<button onclick="uploadFile()">Upload</button>
+	<br><br>
+	<div id="filterSection" style="display:none;">
+		<label for="column">Filter:</label>
+		<select id="column"></select>
+		<input type="text" id="filterValue">
+		<button onclick="applyFilter()">Upload</button>
+	</div>
+
+	<table id="csvTable">
+        <thead></thead>
+        <tbody></tbody>
+    </table>
+
+	
+</body>
+
+</html>

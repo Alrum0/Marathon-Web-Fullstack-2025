@@ -1,0 +1,84 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./script.js" defer></script>
+</head>
+<body>
+    <h1>Convert to and from XML</h1>
+    <div>
+        <h2>Original quoutes</h2>
+        <ul id="originQuoutes"></ul>
+    </div>
+
+    <div>
+        <button onclick="convertToXML()">Convert to XML</button>
+        <button onclick="convertFromXML()">Convert from XML</button>
+    </div>
+
+    <div>
+        <h2>Result:</h2>
+        <ul id="resultedQuoutes"></ul>
+    </div>
+
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avenger Quotes XML Converter</title>
+     <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .container {
+            display: flex;
+            gap: 20px;
+        }
+        .column {
+            flex: 1;
+            border: 1px solid #ccc;
+            padding: 15px;
+            border-radius: 5px;
+        }
+         button {
+            padding: 10px 15px;
+            margin: 10px 5px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+    </style> 
+    <script src="./script.js" defer></script>
+</head>
+<body>
+    <h1>Avenger Quotes XML Converter</h1>
+    
+    <div class="container">
+        <div class="column">
+            <h2>Original Quotes</h2>
+            <ul id="originQuoutes"></ul>
+        </div>
+        
+        <div class="column">
+            <h2>Result After XML Conversion</h2>
+            <ul id="resultedQuoutes"></ul>
+        </div>
+    </div>
+
+    <div>
+        <button onclick="convertToXML()">Convert to XML</button>
+        <button onclick="convertFromXML()">Convert from XML</button>
+    </div>
+</body>
+</html>

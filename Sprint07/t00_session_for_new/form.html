@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Session for new</h1>
+    <form class="border" action="/submit" method="post">
+        <fieldset>
+            <fieldset>
+                <legend>About the Superhero</legend>
+                <label for="name">Real Name</label>
+                <input type="text" 
+                    placeholder="Superhero real name" 
+                    id="name" 
+                    name="name"
+                    autofocus
+                    required>
+                <label for="alias">Current Alias</label>
+                <input type="text" 
+                    placeholder="Superhero alias" 
+                    id="alias" 
+                    name="alias"
+                    required>
+                <label for="age">Age</label>
+                <input type="number" 
+                    min="1" 
+                    max="999" 
+                    step="1" 
+                    id="age" 
+                    name="num"
+                    required>
+                <br>
+                <br>
+                <label for="about">About</label>
+                <textarea name="about" 
+                        maxlength="500" 
+                        placeholder="Information about the superhero, max 500 symbols" 
+                        rows="5" 
+                        cols="70" 
+                        id="about"
+                        required></textarea>
+                <br>
+                <br>
+                <label for="photo">Photo</label>
+                <input type="file" 
+                    id="photo" 
+                    name="photo"
+                    required>
+            </fieldset>
+            <fieldset>
+                <legend>Powers</legend>
+                <input type="checkbox" 
+                    id="telekinesis" 
+                    name="checkbox_origin"
+                    value="Strength">
+                <label for="telekinesis">Strength</label>
+                <input type="checkbox" 
+                    id="Superstrengthorspeed" 
+                    name="checkbox_origin"
+                    value="Speed">
+                <label for="Superstrengthorspeed">Speed</label>
+                <input type="checkbox" 
+                    id="Shapeshifting" 
+                    name="checkbox_origin"
+                    value="Intelligence">
+                <label for="Shapeshifting">Intelligence</label>
+                <input type="checkbox" 
+                    id="Flight" 
+                    name="checkbox_origin"
+                    value="Teleportation">
+                <label for="Flight">Teleportation</label>
+                <input type="checkbox" 
+                    id="Elementalcontrol" 
+                    name="checkbox_origin"
+                    value="Immortal">
+                <label for="Elementalcontrol">Immortal</label>
+                <input type="checkbox" 
+                    id="other_side" 
+                    name="checkbox_origin"
+                    value="Another">
+                <label for="other_side">Another</label>
+                <br>
+                <br>
+                <label for="levelOfControl">Level of control:</label>
+                <input type="range" 
+                    id="levelOfControl" 
+                    name="levelOfControl" 
+                    min="0" 
+                    max="10" 
+                    step="1" 
+                    value="1"
+                    required>
+            </fieldset>
+            <fieldset>
+                <legend>Publicity</legend>
+                <br>
+                <input type="radio" 
+                    id="unknown" 
+                    name="origin"
+                    value="UNKNOWN">
+                <label for="unknown">UNKNOWN</label>
+                <input type="radio" 
+                    id="Freaklabaccident" 
+                    name="origin"
+                    value="LIKE A GHOST">
+                <label for="Freaklabaccident">LIKE A GHOST</label>
+                <input type="radio" 
+                    id="Chosenbyanancientwisebeing" 
+                    name="origin"
+                    value="I AM IN COMICS">
+                <label for="Chosenbyanancientwisebeing">I AM IN COMICS</label>
+                <input type="radio" 
+                    id="Thesuperheroisnothuman" 
+                    name="origin"
+                    value="I HAVE FUN CLUB">
+                <label for="Thesuperheroisnothuman">I HAVE FUN CLUB</label>
+                <input type="radio" 
+                    id="other" 
+                    name="origin"
+                    value="SUPERSTAR">
+                <label for="other">SUPERSTAR</label>
+            </fieldset>
+            <input class="button" type="reset" value="CLEAR" name="button_clear">
+            <input class="button" type="submit" value="SEND" name="button_send">
+        </fieldset>
+    </form>
+</body>
+</html>
